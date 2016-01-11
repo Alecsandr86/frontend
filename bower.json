@@ -1,9 +1,9 @@
 {
-  "name": "frontend-devil",
+  "name": "frontend",
   "version": "1.0.0",
-  "homepage": "https://github.com/Insayt/frontend-devil",
+  "homepage": "https://github.com",
   "authors": [
-    "Alex Insayt <insait.rostov@ya.ru>"
+    "Alexsandr Chernetsciy"
   ],
   "description": "Devil boilerplate for html+js+css apps",
   "moduleType": [
@@ -12,6 +12,6 @@
   "license": "MIT",
   "dependencies": {
     "normalize.css": "*",
-    "jquery": "2.*"
+    "jquery": "1.*"
   }
 }
