@@ -1,0 +1,109 @@
+/********************************
+*      ДОПОЛНИТЕЛЬНЫЕ СТИЛИ
+*********************************/
+@import "../../bower_components/normalize.css/normalize.css";
+@import "../../bower_components/bourbon/app/assets/stylesheets/bourbon";
+@import "../../bower_components/bourbon/app/assets/stylesheets/bourbon-deprecated-upcoming";
+
+@import "partials/sprite";
+
+@include sprites($spritesheet-sprites);
+
+//D:\work\frontend\src\style\partials
+
+//hover спрайта
+
+
+.icon {
+  @include sprite($icon);
+  &:hover {
+    @include sprite($icon-hover);
+  }
+}
+.nav-mobail{
+  @include sprite($nav-mobail);
+  &:hover {
+    @include sprite($nav-mobail-hover);
+  }
+}
+
+// Переменые
+
+$em-base: 19px;
+
+// \\\ Переменые \\\
+
+//   Font Stacks  НАБОРЫ БАЗОВЫХ ШРИФТОВ
+
+//font-family: $georgia;
+//font-family: $helvetica;
+//font-family: $lucida-grande;
+//font-family: $monospace;
+//font-family: $verdana;
+
+
+
+
+*{
+  @include box-sizing(border-box);
+}
+
+html{
+  font-size:$em-base;
+}
+
+body{
+  background-color: black;
+  color: red;
+  text-align: center;
+  font-family: $helvetica;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+
+}
+
+
+/********************************
+*       ОСНОВНЫЕ СТИЛИ
+********************************/
+
+img{
+  width: 300px;
+}
+h1{
+  font-size: rem(100);
+  @include transition(all 0.5s $ease-out-cubic);
+  &:hover{
+    color: blue;
+  }
+
+}
+
+span{
+  @include triangle(rem(24), red, down);
+  @include transition(all 0.5s $ease-out-cubic);
+  cursor: pointer;
+  &:hover{
+    border-top-color:#00f;
+  }
+}
+
+
+
+
+
+
+
+/*************************
+*     КАСТОМНЫЕ СТИЛИ
+**************************/
+
+@import "partials/media";
